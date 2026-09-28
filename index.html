@@ -258,6 +258,32 @@ section { scroll-margin-top: calc(var(--nav-h) + 24px); }
   line-height: 1.75;
   margin-bottom: 44px;
 }
+
+.pain-strip {
+  margin: 0 0 30px;
+  border-left: 2px solid var(--brass);
+  padding: 4px 0 4px 22px;
+  max-width: 640px;
+}
+.pain-strip .q {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin-bottom: 12px;
+}
+.pain-strip li {
+  font-family: var(--serif);
+  font-size: 1.06rem;
+  color: var(--ink-dim);
+  padding: 6px 0;
+}
+.pain-strip li::before {
+  content: "\2192";
+  color: var(--brass);
+  margin-right: 12px;
+}
 .hero-sub strong { color: var(--ink); font-weight: 500; }
 
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; }
@@ -748,6 +774,7 @@ footer { border-top: 1px solid var(--line); padding: 34px 0 40px; }
 @media (max-width: 640px) {
   .protocol { grid-template-columns: 1fr; gap: 22px; }
   .contact-actions { gap: 16px; }
+  .pain-strip { padding-left: 14px; }
 }
 
 /* ============================================================
@@ -867,19 +894,27 @@ footer { border-top: 1px solid var(--line); padding: 34px 0 40px; }
       Building <em>production-grade</em> AI systems &amp; intelligent automations.
     </h1>
 
-    <p class="hero-sub reveal" style="--d:80ms">
-      I'm an AI engineer specializing in <strong>GenAI</strong>, <strong>RAG architectures</strong>,
-      <strong>computer vision</strong> and <strong>enterprise workflow automation</strong>.
-      I design, build and ship systems that survive real users, real data and real deadlines.
-      And I stay accountable for them long after they go live.
+    <div class="pain-strip reveal" style="--d:80ms">
+      <p class="q">Recognize any of these?</p>
+      <ul>
+        <li>Hours every week lost to manual, repetitive work</li>
+        <li>Information trapped in documents and inboxes no software can read</li>
+        <li>An AI idea that never made it past the demo</li>
+      </ul>
+    </div>
+
+    <p class="hero-sub reveal" style="--d:140ms">
+      That's exactly the work I take over. I build <strong>production LLM and vision systems</strong>
+      your team can trust, verified down to <strong>every number</strong>, and still accountable
+      long after they go live.
     </p>
 
-    <div class="hero-ctas reveal" style="--d:140ms">
+    <div class="hero-ctas reveal" style="--d:200ms">
       <a class="btn btn-solid" href="#work">View Case Studies</a>
       <a class="btn btn-line" href="https://wa.me/923235484551?text=Hi%20Musharaf%2C%20I%20found%20your%20portfolio%20and%20I%27d%20like%20to%20discuss%20an%20AI%20project." target="_blank" rel="noopener">Chat on WhatsApp&nbsp;&nbsp;↗</a>
     </div>
 
-    <div class="hero-stats reveal" style="--d:200ms">
+    <div class="hero-stats reveal" style="--d:260ms">
       <div class="hstat">
         <div class="n">3+</div>
         <div class="l">Years in AI engineering &amp; research</div>
@@ -1264,9 +1299,9 @@ footer { border-top: 1px solid var(--line); padding: 34px 0 40px; }
     </p>
 
     <div class="contact-actions reveal" style="--d:120ms">
-      <a class="btn btn-solid" href="/cdn-cgi/l/email-protection#2d40585e454c5f4c4b0345034c4f44496d4a404c4441034e4240">Email Me</a>
-      <button class="copy-email" id="copyEmail" data-email="musharaf.h.abid@gmail.com" title="Copy email address"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4c21393f242d3e2d2a6224622d2e25280c2b212d2520622f2321">[email&#160;protected]</a></button>
-      <a class="rule-link" href="/cdn-cgi/l/email-protection#147961677c756675723a7c3a75767d70547379757d783a777b792b6761767e717760295d7a60667b312624777578783126247b7a312624757a312624555d31262464667b7e717760">Book a 30-min intro call <span class="arw">↗</span></a>
+      <a class="btn btn-solid" href="/cdn-cgi/l/email-protection#751800061d140714135b1d5b14171c11351218141c195b161a18">Email Me</a>
+      <button class="copy-email" id="copyEmail" data-email="musharaf.h.abid@gmail.com" title="Copy email address"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3a574f49525b485b5c1452145b58535e7a5d575b535614595557">[email&#160;protected]</a></button>
+      <a class="rule-link" href="/cdn-cgi/l/email-protection#fd90888e959c8f9c9bd395d39c9f9499bd9a909c9491d39e9290c28e889f97989e89c0b493898f92d8cfcd9e9c9191d8cfcd9293d8cfcd9c93d8cfcdbcb4d8cfcd8d8f9297989e89">Book a 30-min intro call <span class="arw">↗</span></a>
       <a class="rule-link" href="Musharaf_Hussain_Abid_CV.pdf">Download CV (PDF) <span class="arw">↓</span></a>
     </div>
 
@@ -1281,7 +1316,7 @@ footer { border-top: 1px solid var(--line); padding: 34px 0 40px; }
         <div class="net">WhatsApp</div>
         <div class="handle">+92 323 548 4551 <span class="arw">↗</span></div>
       </a>
-      <a href="/cdn-cgi/l/email-protection#325f47415a534053541c5a1c53505b5672555f535b5e1c515d5f">
+      <a href="/cdn-cgi/l/email-protection#3f524a4c575e4d5e591157115e5d565b7f58525e5653115c5052">
         <div class="net">Direct</div>
         <div class="handle">Email <span class="arw">↗</span></div>
       </a>
@@ -1397,5 +1432,5 @@ if (!('IntersectionObserver' in window)) {
 ============================================================ */
 document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a42265400d421a72',t:'MTc5MDU5NDgxMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a422a7fe4cdbaa63',t:'MTc5MDU5NzU0NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
