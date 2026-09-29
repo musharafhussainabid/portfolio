@@ -657,14 +657,15 @@ footer { border-top: 1px solid var(--line); padding: 34px 0 40px; }
 ============================================================ */
 .words-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 44px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 56px;
   border-top: 1px solid var(--line);
   padding-top: 8px;
   margin-top: 56px;
 }
-.word { border-left: 1px solid var(--line-soft); padding-left: 44px; }
-.word:nth-child(3n+1) { border-left: 0; padding-left: 0; }
+.word { border-left: 1px solid var(--line-soft); padding-left: 40px; }
+.word:nth-child(2n+1) { border-left: 0; padding-left: 0; }
+.word:nth-child(n+3) { border-top: 1px solid var(--line-soft); padding-top: 32px; }
 .word::before {
   content: "\201C";
   font-family: var(--serif);
@@ -689,7 +690,19 @@ footer { border-top: 1px solid var(--line); padding: 34px 0 40px; }
   color: var(--ink-faint);
   line-height: 2;
 }
-.word .attr .who { color: var(--brass); display: block; }
+.word .attr .who { color: var(--brass); display: block; font-size: 12px; }
+.word .verify {
+  margin-top: 12px;
+  font-size: 0.84rem;
+}
+.word .verify a {
+  color: var(--ink-dim);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  transition: color .2s ease, border-color .2s ease;
+}
+.word .verify a:hover { color: var(--brass); border-color: var(--brass); }
+.word .verify .note { color: var(--ink-faint); font-style: italic; }
 
 /* ============================================================
    ENGAGEMENT PROTOCOL
@@ -769,6 +782,7 @@ footer { border-top: 1px solid var(--line); padding: 34px 0 40px; }
 @media (max-width: 1020px) {
   .words-grid { grid-template-columns: 1fr; gap: 0; }
   .word { border-left: 0 !important; padding-left: 0 !important; padding: 30px 0; border-bottom: 1px solid var(--line-soft); }
+  .word:nth-child(n+3) { border-top: 0; padding-top: 0; }
   .word:last-child { border-bottom: 0; }
   .protocol { grid-template-columns: 1fr 1fr; gap: 28px; }
 }
@@ -1163,6 +1177,9 @@ footer { border-top: 1px solid var(--line); padding: 34px 0 40px; }
           checking his work against real production data.
         </blockquote>
         <p class="attr"><span class="who">Engineering Lead</span>Nexora AI · contract-intelligence engagement</p>
+        <!-- TODO: when this person approves + shares LinkedIn/email, replace the line below with:
+             <p class="verify"><a href="PROFILE_URL" target="_blank" rel="noopener">View on LinkedIn ↗</a></p> -->
+        <p class="verify"><span class="note">Reference available on request</span></p>
       </div>
       <div class="word reveal" style="--d:90ms">
         <blockquote>
@@ -1171,6 +1188,9 @@ footer { border-top: 1px solid var(--line); padding: 34px 0 40px; }
           on task coordination and code review, and takes genuine ownership of his work.
         </blockquote>
         <p class="attr"><span class="who">CEO</span>Lads Technologies</p>
+        <!-- TODO: when the CEO approves + shares LinkedIn/email, replace the line below with:
+             <p class="verify"><a href="PROFILE_URL" target="_blank" rel="noopener">View on LinkedIn ↗</a></p> -->
+        <p class="verify"><span class="note">Reference available on request</span></p>
       </div>
       <div class="word reveal" style="--d:180ms">
         <blockquote>
@@ -1180,6 +1200,25 @@ footer { border-top: 1px solid var(--line); padding: 34px 0 40px; }
           communication, on-time delivery, and both systems did exactly what he promised.
         </blockquote>
         <p class="attr"><span class="who">Project Manager</span>Neural Technologies · client engagement</p>
+        <!-- TODO: when the PM approves + shares LinkedIn/email, replace the line below with:
+             <p class="verify"><a href="PROFILE_URL" target="_blank" rel="noopener">View on LinkedIn ↗</a></p> -->
+        <p class="verify"><span class="note">Reference available on request</span></p>
+      </div>
+
+      <!-- Quote 4: verbatim, received via WhatsApp (Sep 2026). Name withheld pending approval;
+           contact is on file with Musharaf for reference calls. Do NOT publish their phone number. -->
+      <div class="word reveal" style="--d:270ms">
+        <blockquote>
+          I had the pleasure of working with Musharaf Abid on a client project, where he contributed
+          as an AI Developer. His expertise in data analysis, knowledge-base development, and
+          AI-powered chatbot solutions was genuinely impressive. Musharaf demonstrated strong
+          technical skills, a great understanding of AI concepts, and the ability to turn complex
+          requirements into practical solutions. He was proactive, reliable, and focused on
+          delivering high-quality results throughout the project.
+        </blockquote>
+        <p class="attr"><span class="who">Associate Principal Software Engineer</span>TEO International · client project</p>
+        <!-- TODO: ask for name + LinkedIn to upgrade this card to: NAME · role, TEO International + View on LinkedIn -->
+        <p class="verify"><span class="note">Reference available on request</span></p>
       </div>
     </div>
   </div>
@@ -1304,9 +1343,9 @@ footer { border-top: 1px solid var(--line); padding: 34px 0 40px; }
     </p>
 
     <div class="contact-actions reveal" style="--d:120ms">
-      <a class="btn btn-solid" href="/cdn-cgi/l/email-protection#dcb1a9afb4bdaebdbaf2b4f2bdbeb5b89cbbb1bdb5b0f2bfb3b1">Email Me</a>
-      <button class="copy-email" id="copyEmail" data-email="musharaf.h.abid@gmail.com" title="Copy email address"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f79a82849f96859691d99fd996959e93b7909a969e9bd994989a">[email&#160;protected]</a></button>
-      <a class="rule-link" href="/cdn-cgi/l/email-protection#fc91898f949d8e9d9ad294d29d9e9598bc9b919d9590d29f9391c38f899e96999f88c1b592888e93d9cecc9f9d9090d9cecc9392d9cecc9d92d9ceccbdb5d9cecc8c8e9396999f88">Book a 30-min intro call <span class="arw">↗</span></a>
+      <a class="btn btn-solid" href="/cdn-cgi/l/email-protection#204d555348415241460e480e4142494460474d41494c0e434f4d">Email Me</a>
+      <button class="copy-email" id="copyEmail" data-email="musharaf.h.abid@gmail.com" title="Copy email address"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="523f27213a332033347c3a7c33303b3612353f333b3e7c313d3f">[email&#160;protected]</a></button>
+      <a class="rule-link" href="/cdn-cgi/l/email-protection#412c343229203320276f296f2023282501262c20282d6f222e2c7e3234232b2422357c082f35332e64737122202d2d6473712e2f647371202f647371000864737131332e2b242235">Book a 30-min intro call <span class="arw">↗</span></a>
       <a class="rule-link" href="Musharaf_Hussain_Abid_CV.pdf">Download CV (PDF) <span class="arw">↓</span></a>
     </div>
 
@@ -1321,7 +1360,7 @@ footer { border-top: 1px solid var(--line); padding: 34px 0 40px; }
         <div class="net">WhatsApp</div>
         <div class="handle">+92 323 548 4551 <span class="arw">↗</span></div>
       </a>
-      <a href="/cdn-cgi/l/email-protection#2d40585e454c5f4c4b0345034c4f44496d4a404c4441034e4240">
+      <a href="/cdn-cgi/l/email-protection#78150d0b10190a191e561056191a111c381f15191114561b1715">
         <div class="net">Direct</div>
         <div class="handle">Email <span class="arw">↗</span></div>
       </a>
@@ -1437,5 +1476,5 @@ if (!('IntersectionObserver' in window)) {
 ============================================================ */
 document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a422e7eb0dc91a72',t:'MTc5MDYwMDE2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a42a1f2d6f451a72',t:'MTc5MDY3NTgyNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
